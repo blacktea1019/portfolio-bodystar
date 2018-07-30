@@ -1,0 +1,40 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "apicache": "^1.2.1",
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.2",
+    "connect-history-api-fallback": "^1.5.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-static-gzip": "^0.3.2",
+    "express-validator": "^5.2.0",
+    "helmet": "^3.12.1",
+    "http-errors": "~1.6.2",
+    "jsonwebtoken": "^8.2.2",
+    "knex": "^0.14.6",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.17",
+    "morgan": "^1.9.0",
+    "mysql2": "^1.5.3",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "passport-http-bearer": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "serve-static": "^1.13.2",
+    "underscore": "^1.9.0",
+    "underscore.string": "^3.3.4",
+    "winston": "^2.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}

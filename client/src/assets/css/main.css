@@ -1,0 +1,630 @@
+/************************************************************
+공통 스타일 시작
+- 공통 스타일은 절대 수정하지 마세요. (수정시 레이아웃 깨짐)
+************************************************************/
+
+/* 브라우저 스타일 초기화 */
+*, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family:'맑은 고딕', Malgun Gothic, '돋움', Dotum, '굴림', Gulim, Helvetica, Sans-serif;
+}
+body {
+  background-color:#ecf0f5;
+}
+textarea::-webkit-input-placeholder {
+  color:#999;
+}
+textarea:-ms-input-placeholder {
+  color:#999;
+}
+textarea::placeholder {
+  color:#999;
+  opacity:1;
+}
+
+/* 공통 레이아웃 */
+.skin-bodystar .main-header .navbar {
+  background-color:#222d32;
+}
+.skin-bodystar .main-header .navbar .nav > li > a {
+  color:#ffffff;
+}
+.skin-bodystar .main-header .navbar .nav > li > a:hover,
+.skin-bodystar .main-header .navbar .nav > li > a:active,
+.skin-bodystar .main-header .navbar .nav > li > a:focus,
+.skin-bodystar .main-header .navbar .nav .open > a,
+.skin-bodystar .main-header .navbar .nav .open > a:hover,
+.skin-bodystar .main-header .navbar .nav .open > a:focus,
+.skin-bodystar .main-header .navbar .nav > .active > a {
+  background:rgba(0, 0, 0, 0.1);
+  color:#f6f6f6;
+}
+.skin-bodystar .main-header .navbar .sidebar-toggle {
+  color:#ffffff;
+}
+.skin-bodystar .main-header .navbar .sidebar-toggle:hover {
+  color:#f6f6f6;
+  background:rgba(0, 0, 0, 0.1);
+}
+.skin-bodystar .main-header .navbar .sidebar-toggle {
+  color:#fff;
+}
+.skin-bodystar .main-header .navbar .sidebar-toggle:hover {
+  background-color:#367fa9;
+}
+@media (max-width:767px) {
+  .skin-bodystar .main-header .navbar .dropdown-menu li.divider {
+    background-color:rgba(255, 255, 255, 0.1);
+  }
+  .skin-bodystar .main-header .navbar .dropdown-menu li a {
+    color:#fff;
+  }
+  .skin-bodystar .main-header .navbar .dropdown-menu li a:hover {
+    background:#367fa9;
+  }
+}
+.skin-bodystar .main-header .logo {
+  background-color:#dd3d24;
+  color:#ffffff;
+  border-bottom:0 solid transparent;
+}
+.skin-bodystar .main-header li.user-header {
+  background-color:#3c8dbc;
+}
+.skin-bodystar .content-header {
+  background:transparent;
+  min-height:40px;
+}
+.skin-bodystar .wrapper,
+.skin-bodystar .main-sidebar,
+.skin-bodystar .left-side {
+  background-color:#222d32;
+}
+.skin-bodystar .user-panel > .info,
+.skin-bodystar .user-panel > .info > a {
+  color:#fff;
+}
+.skin-bodystar .sidebar-menu > li.header {
+  color:#4b646f;
+  background:#1a2226;
+}
+.skin-bodystar .sidebar-menu > li > a {
+  border-left:3px solid transparent;
+}
+.skin-bodystar .sidebar-menu > li:hover > a,
+.skin-bodystar .sidebar-menu > li.active > a {
+  color:#ffffff;
+  background:#1e282c;
+  border-left-color:#3c8dbc;
+}
+.skin-bodystar .sidebar-menu > li > .treeview-menu {
+  margin:0 1px;
+  background:#2c3b41;
+}
+.skin-bodystar .sidebar a {
+  color:#b8c7ce;
+}
+.skin-bodystar .sidebar a:hover {
+  text-decoration:none;
+}
+.skin-bodystar .treeview-menu > li > a {
+  color:#8aa4af;
+}
+.skin-bodystar .treeview-menu > li.active > a,
+.skin-bodystar .treeview-menu > li > a:hover {
+  color:#ffffff;
+}
+.skin-bodystar .sidebar-form {
+  border-radius:3px;
+  border:1px solid #374850;
+  margin:10px 10px;
+}
+.skin-bodystar .sidebar-form input[type="text"],
+.skin-bodystar .sidebar-form .btn {
+  box-shadow:none;
+  background-color:#374850;
+  border:1px solid transparent;
+  height:35px;
+}
+.skin-bodystar .sidebar-form input[type="text"] {
+  color:#666;
+  border-top-left-radius:2px;
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:2px;
+}
+.skin-bodystar .sidebar-form input[type="text"]:focus,
+.skin-bodystar .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  background-color:#fff;
+  color:#666;
+}
+.skin-bodystar .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  border-left-color:#fff;
+}
+.skin-bodystar .sidebar-form .btn {
+  color:#999;
+  border-top-left-radius:0;
+  border-top-right-radius:2px;
+  border-bottom-right-radius:2px;
+  border-bottom-left-radius:0;
+}
+.skin-bodystar.layout-top-nav .main-header > .logo {
+  background-color:#3c8dbc;
+  color:#ffffff;
+  border-bottom:0 solid transparent;
+}
+.skin-bodystar.layout-top-nav .main-header > .logo:hover {
+  background-color:#3b8ab8;
+}
+.full-page {
+  overflow:hidden;
+  border-top:15px solid #212121;
+}
+.full-page .main-footer {
+  transition:initial;
+  margin-left:0;
+  text-align:center;
+}
+.full-page .main-footer strong {
+  display:block;
+}
+.dataTables_wrapper .dataTable .dtr-details {
+  width:100%;
+}
+
+/* 공통 여백값 초기화 */
+.no-margin-top {
+  margin-top:0 !important;
+}
+.no-margin-bottom {
+  margin-bottom:0 !important;
+}
+.no-margin-right {
+  margin-right:0 !important;
+}
+.no-margin-left {
+  margin-left:0 !important;
+}
+.no-padding-top {
+  padding-top:0 !important;
+}
+.no-padding-bottom {
+  padding-bottom:0 !important;
+}
+.no-padding-right {
+  padding-right:0 !important;
+}
+.no-padding-left {
+  padding-left:0 !important;
+}
+
+/* 공통 버튼 */
+.btn-dark-gray {
+  background-color:#707070;
+  color:#fff;
+}
+.btn-dark-gray:hover {
+  background-color:#606060;
+  color:#fff;
+}
+.btn-default {
+  background-color:#f4f4f4;
+  color:#444;
+  border-color:#ddd;
+}
+.bg-color-gray {
+  background-color:#ecf0f5;
+}
+
+/* 공통 input 입력창 */
+.form-control {
+  border-radius:3px;
+}
+
+/* 공통 경고창 */
+#alertModal .modal-footer {
+  border-top:none;
+}
+
+/* 공통 게시판 에디터 */
+ul.wysihtml5-toolbar {
+  margin:0;
+  padding:0;
+  display:block;
+}
+ul.wysihtml5-toolbar::after {
+  clear:both;
+  display:table;
+  content:""
+}
+ul.wysihtml5-toolbar > li {
+  float:left;
+  display:list-item;
+  list-style:none;
+  margin:0 5px 10px 0;
+}
+ul.wysihtml5-toolbar a[data-wysihtml5-command=bold] {
+  font-weight:700;
+}
+ul.wysihtml5-toolbar a[data-wysihtml5-command=italic] {
+  font-style:italic;
+}
+ul.wysihtml5-toolbar a[data-wysihtml5-command=underline] {
+  text-decoration:underline;
+}
+ul.wysihtml5-toolbar a.btn.wysihtml5-command-active {
+  background-image:none;
+  -webkit-box-shadow:inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+  -moz-box-shadow:inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+  box-shadow:inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+  background-color:#D9D9D9;
+  outline:0;
+}
+ul.wysihtml5-commands-disabled .dropdown-menu {
+  display:none !important;
+}
+ul.wysihtml5-toolbar div.wysihtml5-colors {
+  display:block;
+  width:50px;
+  height:20px;
+  margin-top:2px;
+  margin-left:5px;
+  position:absolute;
+  pointer-events:none;
+}
+ul.wysihtml5-toolbar a.wysihtml5-colors-title {
+  padding-left:70px;
+}
+ul.wysihtml5-toolbar div[data-wysihtml5-command-value=black] {
+  background:#000 !important;
+}
+ul.wysihtml5-toolbar div[data-wysihtml5-command-value=silver] {
+  background:silver !important;
+}
+ul.wysihtml5-toolbar div[data-wysihtml5-command-value=gray] {
+  background:gray !important;
+}
+ul.wysihtml5-toolbar div[data-wysihtml5-command-value=maroon] {
+  background:maroon !important;
+}
+ul.wysihtml5-toolbar div[data-wysihtml5-command-value=red] {
+  background:red !important;
+}
+ul.wysihtml5-toolbar div[data-wysihtml5-command-value=purple] {
+  background:purple !important;
+}
+ul.wysihtml5-toolbar div[data-wysihtml5-command-value=green] {
+  background:green !important;
+}
+ul.wysihtml5-toolbar div[data-wysihtml5-command-value=olive] {
+  background:olive !important;
+}
+ul.wysihtml5-toolbar div[data-wysihtml5-command-value=navy] {
+  background:navy !important;
+}
+ul.wysihtml5-toolbar div[data-wysihtml5-command-value=blue] {
+  background:#00f !important;
+}
+ul.wysihtml5-toolbar div[data-wysihtml5-command-value=orange] {
+  background:orange !important;
+}
+.board-write-box .glyphicon-quote:before {
+  content:"\201C";
+  font-family:Georgia, serif;
+  font-size:50px;
+  position:absolute;
+  top:-4px;
+  left:-3px;
+  max-height:100%
+}
+.board-write-box .glyphicon-quote:after {
+  content:"\0000a0"
+}
+/************************************************************
+공통 스타일 끝
+- 공통 스타일은 절대 수정하지 마세요. (수정시 레이아웃 깨짐)
+************************************************************/
+
+
+/************************************************************
+개별페이지 스타일 시작
+- 수정작업을 진행할 각 페이지의 메뉴명을 검색하세요.
+- 검색 키워드 예시 : 로그인, 회원가입, 게시판, 권한부여 등
+************************************************************/
+
+/* 로그인 페이지 시작 */
+/** 로그인 박스 **/
+.login-box {
+  width:90%;
+  margin:20px auto;
+  padding-top:20px;
+  background-color:#fff;
+  border:1px solid #d2d6de;
+}
+/** 로그인 박스 상단 영역 **/
+.login-logo {
+  letter-spacing:-1px;
+}
+/** 로그인 박스 로고 텍스트 **/
+.login-logo h1 {
+  font-size:28px;
+}
+/** 로그인 박스 상단 설명문구 **/
+.login-logo p {
+  font-size:14px;
+}
+/** 로그인 박스 하단 영역 **/
+.login-box .login-box-body {
+  background-color:transparent;
+}
+/** 로그인 박스 input 입력창 **/
+.login-box .form-group {
+  clear:both;
+}
+/* 로그인 페이지 끝 */
+
+/* 회원가입 페이지 시작 */
+/** 회원가입 전체 영역 **/
+.register-box {
+  margin:0 auto;
+}
+/** 회원가입 상단 로고 문구 영역 **/
+.register-box .register-logo {
+  margin-bottom:0;
+}
+.register-logo .text-logo {
+  font-weight:bold;
+  font-size:18px;
+}
+.register-logo h1 {
+  font-weight:bold;
+  font-size:34px;
+  margin:0;
+}
+.register-logo p {
+  margin-top:5px;
+  font-size:14px;
+}
+/** 회원가입 폼 좌측 구분 항목 **/
+.register-box label {
+  padding-top:6px;
+}
+/** 회원가입 폼 우측 정보입력 영역 **/
+.register-box .form-padding .phone-hyphen,
+.register-box .form-padding input,
+.register-box .form-padding select,
+.register-box .form-padding .form-at {
+  display:inline-block;
+}
+.register-box .form-control[readonly] {
+  background-color:#fff;
+}
+/** 회원가입 폰번호, 이메일 폼 영역 **/
+.register-box .form-padding input,
+.register-box .form-padding select {
+  width:30%;
+}
+.register-box .form-padding .phone-hyphen {
+  width:4%;
+}
+.register-box .form-email .form-control {
+  padding-left:3px;
+}
+.register-box .form-email .form-at {
+  width:7%;
+  text-align:center;
+}
+/** 회원가입 하단 약관 동의 **/
+.register-box .form-horizontal .checkbox {
+  padding:15px 0 5px;
+}
+/** 회원가입 하단 가입버튼 영역 **/
+.register-box .box-footer {
+  padding-bottom:30px;
+}
+.register-box .box-footer .btn-join {
+  width:100%;
+}
+/** 회원가입 소속 체육관 검색 모달창 **/
+/*** 회원가입 소속 체육관 검색 모달창 상단 타이틀 영역 ***/
+#gymModal .modal-header {
+  background-color:#357ca5;
+}
+#gymModal .modal-header .close {
+  width:26px;
+  font-size:26px;
+  color:#fff;
+  opacity:1;
+}
+#gymModal .modal-title {
+  padding-left:5px;
+  font-weight:bold;
+  color:#fff;
+}
+/*** 회원가입 소속 체육관 검색 모달창 본문 영역 ***/
+#gymModal .modal-body {
+  background-color:#f2f2f2;
+}
+#gymModal .modal-content {
+  border-radius:0;
+}
+/*** 회원가입 소속 체육관 검색 모달창 하단 표 ***/
+#gymModal .table th {
+  background-color:#f2f5f9;
+  text-align:center;
+}
+#gymModal .dataTables_scrollHeadInner,
+#gymModal .dataTable {
+  width:100% !important;
+}
+#gymModal .dataTable th {
+  width:50% !important;
+}
+/* 회원가입 페이지 끝 */
+
+/* 대쉬보드 페이지 시작 */
+/** 대쉬보드 사각박스 좌측 사람수 **/
+.main-box .small-box .number-person {
+  padding-left:2px;
+  font-size:18px;
+  color:#fff;
+  letter-spacing:0;
+}
+/** 대쉬보드 사각박스 우측 아이콘 **/
+.main-box .small-box .icon,
+.main-box .small-box:hover .icon {
+  font-size:85px;
+}
+/** 대쉬보드 사각박스 하단 카테고리 텍스트 **/
+.main-box .small-box p {
+  font-size:15px;
+}
+/* 대쉬보드 페이지 끝 */
+
+/* 게시판 목록 페이지 시작 */
+/** 게시판 목록 하단 글쓰기 버튼 **/
+.board-list-bottom {
+  float:left;
+  position:relative;
+  top:-40px;
+}
+/* 게시판 목록 페이지 끝 */
+
+/* 게시판 읽기 페이지 시작 */
+/** 게시판 읽기 상단, 본문, 하단 공통 여백 **/
+.board-read-box .box-header,
+.board-read-box .box-body,
+.board-read-box .box-footer {
+  padding:15px;
+}
+/** 게시판 읽기 게시물 제목 **/
+.board-read-box .box-title {
+  font-weight:bold;
+  font-size:20px;
+  line-height:22px;
+  letter-spacing:-1px;
+}
+/** 게시판 읽기 게시물 정보 **/
+.board-read-box .write-info {
+  overflow:hidden;
+  width:100%;
+  margin-top:10px;
+  font-size:13px;
+  clear:both;
+}
+/** 게시판 읽기 게시물 작성자 **/
+.board-read-box .info-name {
+  float:left;
+  letter-spacing:-1px;
+}
+.board-read-box .info-name b {
+  padding-left:2px;
+  padding-right:20px;
+}
+/** 게시판 읽기 게시물 작성시간, 조회수, 댓글 영역 **/
+.board-read-box .info-etc {
+  float:left;
+  font-family:tahoma, sans-serif;
+  letter-spacing:0;
+}
+.box-comments .text-muted {
+  font-family:tahoma, sans-serif;
+  letter-spacing:0;
+}
+/** 게시판 읽기 게시물 본문 영역 **/
+.board-read-box .write-content {
+  margin-bottom:30px;
+}
+/** 게시판 읽기 댓글 영역 **/
+.board-read-box .box-comments {
+  background-color:#fafafa;
+}
+.board-read-box .box-comments .comment-text {
+  margin-left:0;
+}
+/** 게시판 읽기 댓글 작성자 **/
+.board-read-box .username {
+  margin-bottom:5px;
+}
+/** 게시판 읽기 하단 이전글,다음글 표 영역 **/
+.table-prev-next {
+  padding:5px 15px;
+}
+.table-prev-next>.table>tbody>tr>td {
+  word-break:break-all;
+  white-space:initial;
+}
+.table-prev-next .no-border {
+  border-top:none;
+}
+/* 게시판 읽기 페이지 끝 */
+
+/* 권한 부여 페이지 시작 */
+/** 권한 부여 회원 삭제 확인 모달창 **/
+#deleteUserModal .modal-content {
+  border-radius:0;
+}
+/** 권한 부여 회원 삭제 확인 모달창 하단 버튼 **/
+#deleteUserModal .btn-outline {
+  color:#fff;
+}
+/* 권한 부여 페이지 끝 */
+
+/************************************************************
+개별페이지 스타일 끝
+************************************************************/
+
+
+/************************************************************
+반응형 미디어쿼리 시작
+- 각 해상도 조건에 맞는 스타일이 선언되어 있습니다.
+- 반응형 미디워쿼리는 최하단에 위치 : 미디어쿼리를 공통으로 묶어서 선언 (코드 최적화)
+************************************************************/
+/* 미디어쿼리 해상도가 992px 이하일 경우 */
+@media (max-width:992px) {
+  /** 게시판 목록 **/
+  .board-list-bottom {
+    float:none;
+    position:initial;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+}
+/* 미디어쿼리 해상도가 992px 이상일 경우 */
+@media (min-width:992px) {
+  /** 로그인 **/
+  .login-box .col-md-4 {
+    float:none;
+  }
+}
+/* 미디어쿼리 해상도가 768px 이상일 경우 */
+@media (min-width:768px) {
+  /** 로그인 박스 **/
+  .login-box {
+    width:360px;
+    margin:30px auto;
+  }
+  /** 회원가입 **/
+  .register-box {
+    width:600px;
+    margin:2% auto 5%;
+  }
+  /** 회원가입 상단 로고 문구 영역 **/
+  .register-box .register-logo {
+    margin-bottom:20px;
+  }
+  /** 회원가입 이메일, 폰번호 좌측 항목 **/
+  .register-box .form-horizontal .control-label {
+    text-align:left;
+  }
+  /** 회원가입 이메일 입력란 */
+  .register-box .form-email .form-control {
+    padding-left:12px;
+  }
+  /** 게시판 읽기 게시물 작성시간, 조회수, 댓글 영역 **/
+  .board-read-box .info-etc {
+    float:right;
+  }
+}
+/************************************************************
+반응형 미디어쿼리 끝
+************************************************************/
